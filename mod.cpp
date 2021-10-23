@@ -1,0 +1,12 @@
+name = "Rank and Roles SF Version";
+picture = "cow.paa";
+actionName = "GitHub";
+action = "https://github.com/";
+description = "Rank and Roles for SF style units";
+logo = "cow.paa";
+logoOver = "cow.paa";
+tooltip = "Rank and Roles";
+tooltipOwned = "Rank and Roles";
+overview = "Rank and Roles";
+author = "YonV";
+overviewPicture = "cow.paa.paa";

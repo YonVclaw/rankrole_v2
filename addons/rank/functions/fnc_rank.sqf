@@ -1,20 +1,30 @@
 #include "script_component.hpp"
-if (isDedicated) exitWith {};
+if (isDedicated) exitwith {};
 
-if (hasInterface) then {
-
-    _playerUID = getPlayerUID player;
-
+if (hasinterface) then {
+    _playerUID = getplayerUID player;
+    
     switch (true) do {
-        case (_playerUID in Ranks_CORPORAL)   : { player setRank "CORPORAL"; };
-        case (_playerUID in Ranks_SERGEANT)   : { player setRank "SERGEANT"; };
-        case (_playerUID in Ranks_LIEUTENANT) : { player setRank "LIEUTENANT"; };
-        case (_playerUID in Ranks_CAPTAIN)    : { player setRank "CAPTAIN"; };
-        case (_playerUID in Ranks_MAJOR)      : { player setRank "MAJOR"; };
-        case (_playerUID in Ranks_COLONEL)    : { player setRank "COLONEL"; };
-        default { player setRank "PRIVATE"; };
+        case (_playerUID in ranks_corporal) : {
+            player setRank "CORPORAL";
+        };
+        case (_playerUID in ranks_sergeant) : {
+            player setRank "SERGEANT";
+        };
+        case (_playerUID in ranks_lieutenant) : {
+            player setRank "LIEUTENANT";
+        };
+        case (_playerUID in ranks_captain) : {
+            player setRank "CAPTAIN";
+        };
+        case (_playerUID in ranks_major) : {
+            player setRank "MAJOR";
+        };
+        case (_playerUID in ranks_colonel) : {
+            player setRank "COLONEL";
+        };
+        default {
+            player setRank "PRIVATE";
+        };
     };
-
 };
-
-
