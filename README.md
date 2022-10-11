@@ -26,4 +26,50 @@
 
 # Rank and Roles for Arma
 
-TBW
+Sets ARMA Rank and Roles
+
+
+In CBA aka add on options, you will see a rank and a role selections
+
+Put in a list of steam user ID's 
+example: "7656xxxxxxxxxxxxxx","7656xxxxxxxxxxxxxx" no comma at the end
+
+If you edit a cbasettings.sqf file directly its need to be  double quotes in quotes """7656xxxxxxxxxxxxxx"",""7656xxxxxxxxxxxxxx"""
+
+Ranks
+In the ranks selection, try only to put each steam id in one field, ( i'm not really sure what will happen if you put an id in more than one rank, its somewhere between nothing and house cat with nuclear launch codes )
+
+Roles
+Medic - ACE3 Medic trait
+Lead Medic, Doctor - ACE3 Dr trait
+Engineer - ACE3 Engineer trait 
+Lead Engineer - ACE3 Advance Engineer trait
+Communications - Simplex Transport-  whitelists Drongo's Artillery & Air Operations JTAC
+Lead Communications, Simplex all - JFIRE - Mainly for Drongo's  Air Operations with out the JTAC setting 
+
+Supports simplex services attributes
+https://github.com/SceptreOfficial/Simplex-Support-Services/wiki/Instructions but the mod is not required
+
+Access condition
+This code is evaluated locally on the requester's machine which must return true for the support to be accessible. Players must have an appropriate access item (if defined), AND this condition returns true to gain access to the support.
+Here is an example of using a player name/variable list:
+
+For Artillery 
+player getVariable ["canUseSSSarty",false]
+
+For CAS
+player getVariable ["canUseSSScas",false]
+
+For Transports
+player getVariable ["canUseSSStrans",false]
+
+
+Drongo's Artillery & Air Operations
+Add the ability to whitelist users for Drongo's Artillery & Air Operations,
+No dependency is added for these mods
+For Drongo's Artillery you do need to enable Restrict Users in the Options (see Pic Above)
+
+Air Operations, users are enabled as a JTAC, AIR boss has the full access.
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=1675485070
+https://steamcommunity.com/sharedfiles/filedetails/?id=1533097069
